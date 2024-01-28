@@ -78,12 +78,10 @@ class Pymp(tk.Tk):
 
         self.text1 = tk.StringVar(self, value="")
         self.text2 = tk.StringVar(self, value="")
-        self.text2.set('')
         self.status_bar = tk.StringVar()
         self.status_bar.set('Ready')
 
         self.frames = {}
-
         for window in (Disclaimer, MenuWindow, Pymp3, Pymp4):
             frame = window(container, self)
             self.frames[window] = frame
@@ -91,8 +89,8 @@ class Pymp(tk.Tk):
 
         self.show_frame(Disclaimer)
 
-    def show_frame(self, cont):
-        frame = self.frames[cont]
+    def show_frame(self, frame):
+        frame = self.frames[frame]
         frame.tkraise()
 ```
 
