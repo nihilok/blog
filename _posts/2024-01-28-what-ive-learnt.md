@@ -11,7 +11,7 @@ One of the first projects I took on as a learning exercise was a GUI program to 
 
 The first thing I notice looking back the code, is how everything is in the same file! Admittedly, it's not a huge program, but still, there's plenty of different things going on in this file. There's a window to download MP3s, a window to download MP4s and a main window.
 
-```Python
+```python
 LARGE_FONT = 'Verdana 14 bold'
 MEDIUM_FONT = 'Verdana 10'
 SMALL_FONT = 'Verdana 8 bold'
@@ -91,7 +91,7 @@ class Pymp(tk.Tk):
 
         self.show_frame(Disclaimer)
 
-    def show_frame(self, cont):=
+    def show_frame(self, cont):
         frame = self.frames[cont]
         frame.tkraise()
 ```
