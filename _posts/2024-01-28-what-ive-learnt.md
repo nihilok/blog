@@ -5,7 +5,7 @@ date: 2024-01-28
 
 ### _It's been nearly 4 years since I started on the road to becoming a professional software engineer. What have I learnt in this time?_
 
-I thought it might be quite cool to take a look back at some of the code I wrote very early on and go over anything that I was completely oblivious at the time and reflect on how it felt to be stepping into the big wide world of programming.
+I thought it might be quite fun to start by taking a look back at some of the code I wrote very early on and go over anything that I was completely oblivious of at the time and reflect on how it felt to be stepping into the big wide world of programming.
 
 One of the first projects I took on as a learning exercise was a GUI program to download and extract MP3s from YouTube videos. I have a very close friend who was a few steps further along the road to me at the time, as he had already taken the plunge and was already maintaining his first mobile app, and when I told him what I was doing he offered me a useful criteria - he said it should take the JSON from exported Firefox bookmarks and download the whole list of MP3s. It was upon receiving this challenge, I think, that I realised how much of a buzz it is to have an extrinsic goal to be working towards, with other stakeholders involved. I succeeded in making my little Python Tkinter app do what he had asked. I even had some multithreading in there if I remember rightly so that I could show the progress of the downloads, but I probably had very little idea of what that entailed under the hood, and had just found something on StackOverflow that pointed me towards multithreading. One thing I remember definitely not understanding at this time was classes in Python. I was using them for sure, but the way I was using them was extremely naive.
 
@@ -95,3 +95,6 @@ class Pymp(tk.Tk):
 ```
 
 I'm not sure when the idea of objects solidified itself in my head, but it was definitely something that I learnt about gradually, finally nailing all the pieces together when I read _Mastering Object-Oriented Python_ (Steven F Lott) a couple of years after the above example project was first cobbled together.
+
+A big part of this was understanding the lifecycle of an object, and when different "dunder" methods are called, such as `__init__`, but also `__new__`, `__set_attr__`, `__set_attribute__` etc. and what they do, and how/why to override them in certain specific cases. Another fundamental thing I learnt about in this regard is Python's MRO, or Method Resolution Order, and how important this is when using mixins and multiple inheritance.
+
